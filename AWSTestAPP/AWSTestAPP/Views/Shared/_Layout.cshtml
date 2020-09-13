@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Birendra</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        .mynav_navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial;
+        }
+
+            /* Links inside the navbar */
+            .mynav_navbar a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+        /* The dropdown container */
+        .mynav_dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            /* Dropdown button */
+            .mynav_dropdown .mynav_dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: black;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit; /* Important for vertical align on mobile phones */
+                margin: 0; /* Important for vertical align on mobile phones */
+            }
+
+            /* Add a red background color to navbar links on hover */
+            .mynav_navbar a:hover, .mynav_dropdown:hover .mynav_dropbtn {
+                background-color: lightcoral;
+            }
+
+        /* Dropdown content (hidden by default) */
+        .mynav_dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            /* Links inside the dropdown */
+            .mynav_dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                /* Add a grey background color to dropdown links on hover */
+                .mynav_dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        /* Show the dropdown menu on hover */
+        .mynav_dropdown:hover .mynav_dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body style="background-image: linear-gradient(to bottom right, rgba(0,123,255,.5), yellow);">
+    <table>
+        <tr>
+            <td colspan="5"><marquee direction="left"><p style="font-size:smaller">Supported Browsers: Microsoft Windows Internet Explorer 11.0 and Google’s most current version of Chrome</p></marquee></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="visibility:hidden">rajan</td>
+        </tr>
+        <tr style="height:30px;">
+            <td style="        padding-left: 80px;
+"></td>
+            <td>
+                <a href="https://www.facebook.com/rajan.birendra" target="_blank"> <img src="~/images/fb.png" height="23" width="25" alt="facebook" title="Go to fb page." /><img /></a>
+            </td>
+            <td style="margin-top:5px;"><a href="https://www.linkedin.com/in/rajan-birendra" target="_blank"><img src="~/images/linkedin-in-logo-png-1.png" alt="linked in" height="25" width="25" title="Go to linkedin page." /></a></td>
+            <td style="padding-left:350px;"> <span style="font-size:x-large"><b style="text-wrap:none">Birendra Kumar Rajan</b></span></td>
+            <td style="padding-left:500px;font-size:small;"> <b>Email ID:</b> <a href="mailto: rajan.birendra@gmail.com" style="text-decoration:underline;">rajan.birendra@gmail.com</a> </td>
+        </tr>
+    </table>
+    <table><tr><td style="width:1290px;margin-top:-20px"></td><td style="" align="right"> <a href="mailto: rajan.birendra@gmail.com" style="font-size:small;text-decoration:underline">rajan.birendra@iitb.ac.in</a></td></tr></table>
+    <header style="padding-top:7px;padding-left:80px;padding-right:40px;">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container" style=" background-color: #f8f9fa">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><b></b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <div class="mynav_dropdown">
+                                <a asp-controller="Home" asp-action="Index" class="mynav_dropbtn mynav_dropdown">HOME</a>
+                                <i class="fa fa-caret-down"></i>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="mynav_dropdown">
+                                <a asp-controller="Home" asp-action="Maintenance" class="mynav_dropbtn mynav_dropdown">EDUCATION</a>
+                                <i class="fa fa-caret-down"></i>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="mynav_dropdown">
+                                <a asp-controller="Home" asp-action="Research" class="mynav_dropbtn mynav_dropdown">RESEARCH</a>
+                                <i class="fa fa-caret-down"></i>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="mynav_dropdown">
+                                <a asp-controller="Home" asp-action="Maintenance" class="mynav_dropbtn mynav_dropdown">PUBLICATIONS</a>
+                                <i class="fa fa-caret-down"></i>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="mynav_dropdown">
+                                <a asp-controller="Home" asp-action="Maintenance" class="mynav_dropbtn mynav_dropdown">AWARDS</a>
+                                <i class="fa fa-caret-down"></i>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="mynav_dropdown">
+                                <a asp-controller="Home" asp-action="Maintenance" class="mynav_dropbtn mynav_dropdown">  MISCELLANEOUS</a>
+                                <i class="fa fa-caret-down"></i>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="mynav_dropdown">
+                                <a asp-controller="Home" asp-action="ContactMe" class="mynav_dropbtn mynav_dropdown">  CONTACT ME</a>
+                                <i class="fa fa-caret-down"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - Copyright. Birendra Rajan -  All rights reserved.- <a asp-area="" asp-controller="Home" asp-action="Maintenance">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
